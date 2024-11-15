@@ -1,0 +1,33 @@
+.p-calendar {
+    background-color: #F7F7F7 !important;
+}
+
+.p-button {
+    background-color: #FFD600 !important;
+    border: none !important;
+    color: white !important;
+}
+
+
+.p-button:disabled {
+    background-color: #F0F0F0 !important;
+    color: #A0A0A0 !important;
+}
+
+
+.calendarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+
+    width: 400px;
+    height: 400px;
+}
+
+.calendar {
+    height: 700px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}

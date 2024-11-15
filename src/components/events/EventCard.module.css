@@ -1,0 +1,56 @@
+
+.event__card {
+    margin: 10px 0;
+    width: 100%;
+    background-color: #F7F7F7;
+
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+}
+
+.event__card__content {
+    position: relative; /* Для позиционирования псевдоэлемента */
+    background-color: #fff; /* Фон основной области */
+    border-radius: 8px; /* Сглаженные углы */
+    overflow: hidden; /* Скрыть выходящие части псевдоэлемента */
+    padding: 15px;
+}
+
+/* Псевдоэлемент для фона */
+.event__card__content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: var(--background-image);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.event__reg__btn {
+    width: 100%;
+    background: #FFD600;
+    cursor: pointer;
+    border-radius: 0 0 9px 9px;
+    height: 30px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.event__reg__btn:hover {
+    background-color: #ffed09;
+    color: black;
+}
+
+.links {
+    color: #1E90FFFF;
+    position: relative;
+    z-index: 10;
+}
+

@@ -1,0 +1,71 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #1E90FFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    border-block-end: 1px solid #1E90FFFF;
+}
+
+a:visited {
+    color: #1E90FFFF;
+}
+
+a:focus {
+    outline: none;
+}
+
+a:focus-visible {
+    border: 2px solid #1E90FFFF;
+}
+
+button,
+input {
+    color: currentColor;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+

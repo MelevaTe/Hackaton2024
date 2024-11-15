@@ -1,0 +1,56 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  /*font-family: Arial, sans-serif;*/
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.navbar__content {
+  padding: 0 20px;
+  width: 80%;
+  height: 65px;
+
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  border-radius: 0 0 10px 10px;
+  
+  background-color: #FFD600;
+  
+  display: flex;
+}
+
+.tab {
+  color: #000;
+  padding: 20px;
+  font-size: 18px;
+  height: 100%;
+
+  cursor: pointer;
+
+  text-align: center;
+  text-decoration: none;
+}
+
+.tab:visited {
+  color: #000;
+}
+
+.tab:hover {
+  border-block-end: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.tab:focus {
+  outline: none;
+}
+
+
+.logout {
+  margin-inline-start: auto;
+  color: #000;
+}

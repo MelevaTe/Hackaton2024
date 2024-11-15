@@ -1,0 +1,17 @@
+.page__container{
+    width: 100%;
+    margin: 50px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page__content{
+    background: #F0F0F0;
+    padding: 35px;
+    height: 750px;
+    width: 80%;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+}

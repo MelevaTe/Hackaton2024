@@ -1,0 +1,136 @@
+.profile__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block-start: 20px;
+}
+
+
+.profile__content {
+    background: #F0F0F0;
+    padding: 35px;
+    width: 80%;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+
+.user__info__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    height: 100%;
+}
+
+.user__info__container__item1st {
+    width: 55%;
+    padding: 0;
+    height: auto;
+}
+
+.user__info__container__item1st__header {
+    text-align: center;
+    border-block-end: 1px solid rgb(0,0,0,0.2);
+    padding-block-end: 10px;
+}
+
+.user__info__container__item2sc {
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.event__card {
+    margin: 10px;
+    width: 90%;
+    background-color: #F7F7F7;
+
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+}
+
+.event__card__content {
+    position: relative; /* Для позиционирования псевдоэлемента */
+    background-color: #fff; /* Фон основной области */
+    border-radius: 8px; /* Сглаженные углы */
+    overflow: hidden; /* Скрыть выходящие части псевдоэлемента */
+    padding: 15px;
+}
+
+/* Псевдоэлемент для фона */
+.event__card__content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: var(--background-image);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.event__reg__btn {
+    width: 100%;
+    background: #FFD600;
+    cursor: pointer;
+    border-radius: 0 0 9px 9px;
+    height: 30px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.event__reg__btn:hover {
+    background-color: #E9CA00;
+    color: black;
+}
+
+.links {
+    color: #1E90FFFF;
+    position: relative;
+    z-index: 10;
+}
+
+
+.user__info__content {
+    height: 95%;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user__info__content::-webkit-scrollbar {
+    width: 7px; /* Ширина полосы прокрутки */
+}
+
+/* Цвет полосы прокрутки */
+.user__info__content::-webkit-scrollbar-track {
+    background: #F0F0F0; /* Цвет фона трека прокрутки */
+    border-radius: 5px;
+}
+
+/* D9D9D9
+F0F0F0 */
+
+/* Цвет ползунка (Scroller) */
+.user__info__content::-webkit-scrollbar-thumb {
+    background-color: #D9D9D9; /* Цвет ползунка */
+    border-radius: 10px; /* Радиус для закругленных углов */
+    border: 2px solid rgb(0, 0, 0, 0.2); /* Внутренний отступ для ползунка */
+}
+
+/* При наведении на ползунок */
+.user__info__content::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Изменение цвета при наведении */
+}
+
